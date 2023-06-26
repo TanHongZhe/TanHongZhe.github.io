@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+h1 {
+    color: black;
+}
+
+.btn {
+    background-color: light-blue;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
+
+.navigation{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+
+}
+
+.navigation .head{
+    color: bisque;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg,lightblue,#d7a1f9);
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+
+}
+
+ul li{
+    display: block;
+    width: 100%;
+
+}
+
+ul li a{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+
+}
+
+ul li a i{
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30x;
+}
+
+ul li:hover a{
+    background: black;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+span{
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+#bars{
+    background:#ce8cf8;
+}
+
+#check:checked ~ .navigation{
+    transform: translateX(0);
+}
+
+#check:checked ~ .navigation #bars{
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    background: url(https://wallpapercave.com/wp/wp5910896.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(80%);
+}
+
+#check:checked ~ section{
+    transform: scale(1.2);
+    filter: brightness(40%);
+}
