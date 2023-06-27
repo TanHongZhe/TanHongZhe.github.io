@@ -9,48 +9,58 @@ body{
     overflow: hidden;
 }
 
-.press{
-    text-align: center;
+.aboutme{
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
 
 }
 
-
-
-.main{
-    transform: translateY(-50%);
-    text-align: center;
+.aboutme{
+    transform: translateY(0);
+    text-align: left;
     color: #fff;
-    top: 50%;
+    top: 1%;
     width: 100%;
     position: absolute;
 }
 
-.main h1{
 
-    font-size: 8vmax;
+.aboutme h1::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.aboutme h1{
+    font-size: 5.5vmax;
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
     
 }
 
-.main p{
+.aboutme p{
     font-size: 1.5vmax;
     margin: 20px auto;
-    font-weight: 300;
+    font-weight: bold;    
     line-height: 25px;
-    text-transform:uppercase;
 }
 
-
-
-.btn {
-    background-color: #bfe2ff;
-    padding: 12px 16px;
-    font-size: 16px;
-
+.aboutme p2{
+    font-size: 1.5vmax;
+    margin: 20px auto;
+    font-weight: bold;    
+    line-height: 25px;
+    color: lightblue;
 }
 
-button{
+.aboutme button{
     width: 200px;
     padding: 15px 0px;
     margin: 20px 10px;
@@ -67,7 +77,7 @@ button{
     text-transform: uppercase;
 }
 
-button span{
+.aboutme button span{
     background: #aac9dd;
     height: 100%;
     width: 0;
@@ -79,16 +89,79 @@ button span{
     transition: 0.5s;
 }
 
-.btn:hover {
-    background-color: #8fd3fe;
-}
 
-button:hover {
+.aboutme button:hover {
     border: none;
     color: bisque;
 }
 
-button:hover span{
+.aboutme button:hover span{
+    width: 100%;
+}
+
+
+.main{
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.main h1{
+
+    font-size: 6.5vmax;
+    text-transform: uppercase;
+    margin-top: 80px;
+    
+}
+
+.main p{
+    font-size: 1.5vmax;
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 25px;
+    text-transform:uppercase;
+}
+
+
+.main button{
+    width: 200px;
+    padding: 15px 0px;
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #78aed3;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.main button span{
+    background: #aac9dd;
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+.main button:hover {
+    border: none;
+    color: bisque;
+}
+
+.main button:hover span{
     width: 100%;
 }
 
