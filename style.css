@@ -10,20 +10,16 @@ body{
 }
 
 .aboutme{
-    text-align: left;
+    text-align: justify;
     margin-left: 150px;
-    margin-right: 150px;
-
-}
-
-.aboutme{
     transform: translateY(0);
-    text-align: left;
     color: #fff;
-    top: 1%;
-    width: 100%;
+    top: 5%;
+    width: 58%;
     position: absolute;
 }
+
+
 
 
 .aboutme h1::after{
@@ -78,7 +74,8 @@ body{
 }
 
 .aboutme button span{
-    background: #aac9dd;
+    background: grey;
+    opacity: 50%;
     height: 100%;
     width: 0;
     border-radius: 50px;
@@ -256,6 +253,23 @@ section{
     filter: brightness(100%);
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://4kwallpapers.com/images/wallpapers/macos-monterey-stock-blue-light-layers-5k-1920x1200-5898.jpg);
 }
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(50%);
+
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 #check:checked ~ section{
     transform: scale(1.2);
