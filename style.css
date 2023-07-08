@@ -15,7 +15,7 @@ body{
     transform: translateY(0);
     color: #fff;
     top: 5%;
-    width: 70%;
+    width: 60%;
     position: absolute;
 }
 
@@ -42,28 +42,22 @@ body{
 }
 
 .aboutme p{
-    font-size: 1.5vmax;
+    font-size: 2vmax;
     margin: 20px auto;
     font-weight: bold;    
-    line-height: 25px;
+    line-height: 3vmax;
 }
 
-.aboutme p2{
-    font-size: 1.5vmax;
-    margin: 20px auto;
-    font-weight: bold;    
-    line-height: 25px;
-    color: lightblue;
-}
+
 
 .aboutme button{
-    width: 200px;
-    padding: 15px 0px;
+    width: 160px;
+    padding: 12px 0px;
     margin: 20px 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.6vmax;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 35px;
     border: 2px solid #78aed3;
     background: transparent;
     color: #fff;
@@ -75,7 +69,7 @@ body{
 
 .aboutme button span{
     background: lightblue;
-    opacity: 50%;
+    opacity: 30%;
     height: 100%;
     width: 0;
     border-radius: 50px;
@@ -113,20 +107,24 @@ body{
     margin-top: 80px;
     font-weight: 600;
     transition: 0.5s;
-    
+    color: #fff;
+    -webkit-text-stroke: 2px #fff;
 }
 
+
+
 .main h1:hover{
-    -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
 
 .main p{
-    font-size: 1.5vmax;
-    margin: 20px auto;
+    font-size: 2.5vmax;
+    margin: 10px auto;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 3vmax;
     text-transform:uppercase;
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
 }
 
 
@@ -252,6 +250,7 @@ input{
 }
 
 section{
+    overflow: auto;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -278,4 +277,87 @@ label span{
     padding: 3px 8px;
     cursor: pointer;
     background: #000;
+}
+
+.header h1{
+
+    font-size: 9vmax;
+    text-transform: uppercase;
+    margin-top: 4%;
+    font-weight: 600;
+    transition: 0.5s;
+    
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content{
+    margin: 18% 10%;
+    width: 80%;
+    padding: 10px 40px;
+    text-align: left;
+    font-size: 1.6vmax;
+    font-weight: bold;
+    border-radius: 35px;
+    border: 2px solid #78aed3;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+    text-transform: uppercase;
+    line-height: 2.2vmax;
+}
+
+
+.content li{
+    list-style: none;
+}
+
+.content li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.maths h1{
+    width: 50%;
+    translate: 50%;
+    font-size: 4vmax;
+    text-transform: uppercase;
+    margin-top: 4%;
+    font-weight: 600;
+    transition: 0.5s
+}
+
+.maths{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.mathscontent{
+    margin: 17% 10%;
+    width: 50%;
+    padding: 10px 40px;
+    text-align: left;
+    font-size: 1.4vmax;
+    border-radius: 35px;
+    border: 2px solid #78aed3;
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+    line-height: 2.2vmax;
 }
