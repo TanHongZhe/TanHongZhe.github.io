@@ -252,7 +252,6 @@ section{
     min-height: 100vh;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     transition: 0.5s;
     filter: brightness(100%);
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://4kwallpapers.com/images/wallpapers/macos-monterey-stock-blue-light-layers-5k-1920x1200-5898.jpg);
